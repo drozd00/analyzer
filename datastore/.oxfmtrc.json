@@ -1,0 +1,22 @@
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "all",
+  "ignorePatterns": [
+    ".output/**",
+    ".nitro/**",
+    "dist/**",
+    "node_modules/**",
+    "migrations/**",
+    "profiles/**"
+  ],
+  "overrides": [
+    {
+      "files": ["README.md"],
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
+}

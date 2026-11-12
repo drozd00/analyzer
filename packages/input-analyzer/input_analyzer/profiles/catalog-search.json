@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "studyId": "catalog-search",
+  "protocolVersion": "search-v1",
+  "title": "Library catalogue search",
+  "fields": [
+    {
+      "id": "query",
+      "label": "Search query"
+    },
+    {
+      "id": "category",
+      "label": "Catalogue category"
+    }
+  ],
+  "forms": [
+    "catalog-search"
+  ],
+  "variants": [
+    {
+      "id": "classic",
+      "label": "Classic catalogue"
+    },
+    {
+      "id": "compact",
+      "label": "Compact search"
+    },
+    {
+      "id": "assisted",
+      "label": "Assisted search"
+    }
+  ],
+  "phases": [
+    {
+      "id": "practice",
+      "includeInAnalysis": false
+    },
+    {
+      "id": "evaluation",
+      "includeInAnalysis": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "forward",
+      "variantOrder": [
+        "classic",
+        "compact",
+        "assisted"
+      ]
+    },
+    {
+      "id": "reverse",
+      "variantOrder": [
+        "assisted",
+        "compact",
+        "classic"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "compact-classic",
+      "baseline": "classic",
+      "candidate": "compact"
+    },
+    {
+      "id": "assisted-classic",
+      "baseline": "classic",
+      "candidate": "assisted"
+    }
+  ],
+  "scenarioFieldsRequired": true,
+  "reportAdapter": null,
+  "procedure": {}
+}

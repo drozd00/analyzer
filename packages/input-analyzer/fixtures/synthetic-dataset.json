@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "kind": "synthetic",
+  "profile": {
+    "schemaVersion": 1,
+    "studyId": "service-request",
+    "protocolVersion": "pilot-v1",
+    "title": "Service request form comparison",
+    "fields": [
+      {
+        "id": "fullName",
+        "label": "Full name"
+      },
+      {
+        "id": "phone",
+        "label": "Phone"
+      },
+      {
+        "id": "email",
+        "label": "Email"
+      },
+      {
+        "id": "street",
+        "label": "Street"
+      },
+      {
+        "id": "houseNumber",
+        "label": "House number"
+      },
+      {
+        "id": "zipCode",
+        "label": "Postal code"
+      },
+      {
+        "id": "city",
+        "label": "City"
+      },
+      {
+        "id": "objectType",
+        "label": "Object type"
+      },
+      {
+        "id": "issueCategory",
+        "label": "Issue category"
+      },
+      {
+        "id": "priority",
+        "label": "Priority"
+      },
+      {
+        "id": "preferredDate",
+        "label": "Preferred date"
+      },
+      {
+        "id": "timeWindow",
+        "label": "Time window"
+      }
+    ],
+    "forms": [
+      "service-request"
+    ],
+    "variants": [
+      {
+        "id": "A",
+        "label": "Conventional form"
+      },
+      {
+        "id": "B",
+        "label": "Experimental form"
+      }
+    ],
+    "phases": [
+      {
+        "id": "familiarization",
+        "includeInAnalysis": false
+      },
+      {
+        "id": "measured",
+        "includeInAnalysis": true
+      }
+    ],
+    "groups": [
+      {
+        "id": "AX_BY",
+        "variantOrder": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "id": "AY_BX",
+        "variantOrder": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "id": "BX_AY",
+        "variantOrder": [
+          "B",
+          "A"
+        ]
+      },
+      {
+        "id": "BY_AX",
+        "variantOrder": [
+          "B",
+          "A"
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "id": "B-A",
+        "baseline": "A",
+        "candidate": "B"
+      }
+    ],
+    "scenarioFieldsRequired": true,
+    "reportAdapter": "service-request",
+    "procedure": {
+      "trialsPerVariant": 3,
+      "familiarizationPerVariant": 1,
+      "measuredPerVariant": 2,
+      "betweenBlockPauseSeconds": 30,
+      "estimatedSessionMinutes": 15
+    }
+  },
+  "provenance": {
+    "source": "deterministic-test-fixture",
+    "not_participant_data": true
+  },
+  "sessions": [
+    {
+      "id": "cbc1f1da-acaa-547c-be8a-6b2a8eea0f79",
+      "study_id": "service-request",
+      "participant_code": "SYNTHETIC-1",
+      "dataset_kind": "preflight",
+      "protocol_version": "pilot-v1",
+      "group_code": "AX_BY",
+      "created_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "b9a15863-1f69-5278-9183-655960849b98",
+      "study_id": "service-request",
+      "participant_code": "SYNTHETIC-2",
+      "dataset_kind": "preflight",
+      "protocol_version": "pilot-v1",
+      "group_code": "BX_AY",
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "trials": [
+    {
+      "id": "51b16190-4b90-5acc-aa2d-5898403c4492",
+      "session_id": "cbc1f1da-acaa-547c-be8a-6b2a8eea0f79",
+      "ordinal": 0,
+      "variant": "A",
+      "phase": "familiarization",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p1-familiarization",
+      "status": "completed",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": 4
+    },
+    {
+      "id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "session_id": "cbc1f1da-acaa-547c-be8a-6b2a8eea0f79",
+      "ordinal": 1,
+      "variant": "A",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p1-a",
+      "status": "completed",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": 11
+    },
+    {
+      "id": "c4370a7c-58d2-5300-a11a-2a68c8868826",
+      "session_id": "cbc1f1da-acaa-547c-be8a-6b2a8eea0f79",
+      "ordinal": 2,
+      "variant": "B",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p1-b",
+      "status": "completed",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": 4
+    },
+    {
+      "id": "db77371a-10b2-5ec7-8785-53b17a3cb662",
+      "session_id": "b9a15863-1f69-5278-9183-655960849b98",
+      "ordinal": 0,
+      "variant": "B",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p2-b",
+      "status": "completed",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": 4
+    },
+    {
+      "id": "48bf51ee-aa3d-5722-b2f4-2a3181470a59",
+      "session_id": "b9a15863-1f69-5278-9183-655960849b98",
+      "ordinal": 1,
+      "variant": "A",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p2-a",
+      "status": "completed",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": 4
+    },
+    {
+      "id": "3871f9f6-a0fa-51db-9b50-919055971d2e",
+      "session_id": "b9a15863-1f69-5278-9183-655960849b98",
+      "ordinal": 2,
+      "variant": "B",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p2-aborted",
+      "status": "aborted",
+      "started_at": "2026-01-01T00:00:00Z",
+      "ended_at": "2026-01-01T00:00:05Z",
+      "final_sequence": null
+    },
+    {
+      "id": "bee815e6-aa54-58c4-afeb-f9308070d151",
+      "session_id": "b9a15863-1f69-5278-9183-655960849b98",
+      "ordinal": 3,
+      "variant": "A",
+      "phase": "measured",
+      "repetition": 1,
+      "scenario_id": "synthetic-only",
+      "scenario": {
+        "label": "Synthetic fixture, never a pilot observation",
+        "values": {
+          "fullName": "synthetic",
+          "phone": "synthetic",
+          "email": "synthetic",
+          "street": "synthetic",
+          "houseNumber": "synthetic",
+          "zipCode": "synthetic",
+          "city": "synthetic",
+          "objectType": "synthetic",
+          "issueCategory": "synthetic",
+          "priority": "synthetic",
+          "preferredDate": "synthetic",
+          "timeWindow": "synthetic"
+        }
+      },
+      "page_id": "synthetic-p2-ready",
+      "status": "ready",
+      "started_at": null,
+      "ended_at": null,
+      "final_sequence": null
+    }
+  ],
+  "events": [
+    {
+      "event_id": "synthetic-p1-familiarization:1",
+      "trial_id": "51b16190-4b90-5acc-aa2d-5898403c4492",
+      "batch_id": "eba46f1f-1a39-5249-b5d5-ee2b2c48e3fc",
+      "page_id": "synthetic-p1-familiarization",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-familiarization:2",
+      "trial_id": "51b16190-4b90-5acc-aa2d-5898403c4492",
+      "batch_id": "eba46f1f-1a39-5249-b5d5-ee2b2c48e3fc",
+      "page_id": "synthetic-p1-familiarization",
+      "sequence": 2,
+      "ts_ms": 5.0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-familiarization:3",
+      "trial_id": "51b16190-4b90-5acc-aa2d-5898403c4492",
+      "batch_id": "eba46f1f-1a39-5249-b5d5-ee2b2c48e3fc",
+      "page_id": "synthetic-p1-familiarization",
+      "sequence": 3,
+      "ts_ms": 50,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-familiarization:4",
+      "trial_id": "51b16190-4b90-5acc-aa2d-5898403c4492",
+      "batch_id": "eba46f1f-1a39-5249-b5d5-ee2b2c48e3fc",
+      "page_id": "synthetic-p1-familiarization",
+      "sequence": 4,
+      "ts_ms": 550,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1",
+        "submitTs": 50
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:1",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:2",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 2,
+      "ts_ms": 100,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:3",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 3,
+      "ts_ms": 150,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "validation.result",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "trigger": "blur",
+        "valid": false,
+        "ruleIds": [
+          "required"
+        ]
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:4",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 4,
+      "ts_ms": 160,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "validation.result",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "trigger": "submit",
+        "valid": false,
+        "ruleIds": [
+          "mismatch"
+        ]
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:5",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 5,
+      "ts_ms": 200,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "input",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 3
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:6",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 6,
+      "ts_ms": 250,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "validation.result",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "trigger": "blur",
+        "valid": true,
+        "ruleIds": []
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:7",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 7,
+      "ts_ms": 300,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "validation.result",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "trigger": "enter",
+        "valid": false,
+        "ruleIds": [
+          "mismatch"
+        ]
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:8",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 8,
+      "ts_ms": 350,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "input",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "inputType": "deleteContentBackward",
+        "valueLength": 2
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:9",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 9,
+      "ts_ms": 400,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "validation.result",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {
+        "trigger": "submit",
+        "valid": true,
+        "ruleIds": []
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:10",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 10,
+      "ts_ms": 1000,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-a:11",
+      "trial_id": "0c4e4723-3225-5af0-8c51-cd1b1bf9ac70",
+      "batch_id": "934f0ce1-0ebb-5e6f-b992-e1a7e10780de",
+      "page_id": "synthetic-p1-a",
+      "sequence": 11,
+      "ts_ms": 1500,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1",
+        "submitTs": 1000
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-b:1",
+      "trial_id": "c4370a7c-58d2-5300-a11a-2a68c8868826",
+      "batch_id": "83f4d5c8-a068-5667-b2b1-374f9004d76b",
+      "page_id": "synthetic-p1-b",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-b:2",
+      "trial_id": "c4370a7c-58d2-5300-a11a-2a68c8868826",
+      "batch_id": "83f4d5c8-a068-5667-b2b1-374f9004d76b",
+      "page_id": "synthetic-p1-b",
+      "sequence": 2,
+      "ts_ms": 80.0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-b:3",
+      "trial_id": "c4370a7c-58d2-5300-a11a-2a68c8868826",
+      "batch_id": "83f4d5c8-a068-5667-b2b1-374f9004d76b",
+      "page_id": "synthetic-p1-b",
+      "sequence": 3,
+      "ts_ms": 800,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p1-b:4",
+      "trial_id": "c4370a7c-58d2-5300-a11a-2a68c8868826",
+      "batch_id": "83f4d5c8-a068-5667-b2b1-374f9004d76b",
+      "page_id": "synthetic-p1-b",
+      "sequence": 4,
+      "ts_ms": 1300,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1",
+        "submitTs": 800
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-b:1",
+      "trial_id": "db77371a-10b2-5ec7-8785-53b17a3cb662",
+      "batch_id": "ddfff89c-e6e5-563b-b7a3-3837f2929b0d",
+      "page_id": "synthetic-p2-b",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-b:2",
+      "trial_id": "db77371a-10b2-5ec7-8785-53b17a3cb662",
+      "batch_id": "ddfff89c-e6e5-563b-b7a3-3837f2929b0d",
+      "page_id": "synthetic-p2-b",
+      "sequence": 2,
+      "ts_ms": 100,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-b:3",
+      "trial_id": "db77371a-10b2-5ec7-8785-53b17a3cb662",
+      "batch_id": "ddfff89c-e6e5-563b-b7a3-3837f2929b0d",
+      "page_id": "synthetic-p2-b",
+      "sequence": 3,
+      "ts_ms": 1800,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-b:4",
+      "trial_id": "db77371a-10b2-5ec7-8785-53b17a3cb662",
+      "batch_id": "ddfff89c-e6e5-563b-b7a3-3837f2929b0d",
+      "page_id": "synthetic-p2-b",
+      "sequence": 4,
+      "ts_ms": 2300,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1",
+        "submitTs": 1800
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-a:1",
+      "trial_id": "48bf51ee-aa3d-5722-b2f4-2a3181470a59",
+      "batch_id": "daa7d56f-18cb-5370-bc99-bfaee65261c9",
+      "page_id": "synthetic-p2-a",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-a:2",
+      "trial_id": "48bf51ee-aa3d-5722-b2f4-2a3181470a59",
+      "batch_id": "daa7d56f-18cb-5370-bc99-bfaee65261c9",
+      "page_id": "synthetic-p2-a",
+      "sequence": 2,
+      "ts_ms": 100,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-a:3",
+      "trial_id": "48bf51ee-aa3d-5722-b2f4-2a3181470a59",
+      "batch_id": "daa7d56f-18cb-5370-bc99-bfaee65261c9",
+      "page_id": "synthetic-p2-a",
+      "sequence": 3,
+      "ts_ms": 2000,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-a:4",
+      "trial_id": "48bf51ee-aa3d-5722-b2f4-2a3181470a59",
+      "batch_id": "daa7d56f-18cb-5370-bc99-bfaee65261c9",
+      "page_id": "synthetic-p2-a",
+      "sequence": 4,
+      "ts_ms": 2500,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "attemptId": "attempt-1",
+        "submitTs": 2000
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-aborted:1",
+      "trial_id": "3871f9f6-a0fa-51db-9b50-919055971d2e",
+      "batch_id": "ba618cc3-9d8e-5993-8041-969b4a701522",
+      "page_id": "synthetic-p2-aborted",
+      "sequence": 1,
+      "ts_ms": 0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-aborted:2",
+      "trial_id": "3871f9f6-a0fa-51db-9b50-919055971d2e",
+      "batch_id": "ba618cc3-9d8e-5993-8041-969b4a701522",
+      "page_id": "synthetic-p2-aborted",
+      "sequence": 2,
+      "ts_ms": 40.0,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "service-request",
+      "field_id": "fullName",
+      "payload": {},
+      "received_at": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_id": "synthetic-p2-aborted:3",
+      "trial_id": "3871f9f6-a0fa-51db-9b50-919055971d2e",
+      "batch_id": "ba618cc3-9d8e-5993-8041-969b4a701522",
+      "page_id": "synthetic-p2-aborted",
+      "sequence": 3,
+      "ts_ms": 400,
+      "wall_time": "2026-01-01T00:00:00Z",
+      "source": "app",
+      "type": "trial.aborted",
+      "form_id": "service-request",
+      "field_id": null,
+      "payload": {
+        "reason": "synthetic-test"
+      },
+      "received_at": "2026-01-01T00:00:06Z"
+    }
+  ]
+}

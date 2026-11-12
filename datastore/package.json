@@ -1,0 +1,56 @@
+{
+  "name": "@input-analyzer/datastore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HTTP datastore service backed by PostgreSQL, with local validation and migrations.",
+  "bin": {
+    "datastore-migrate": "./migrate.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "index.d.mts",
+    "migrate.mjs",
+    ".output",
+    "lib",
+    "migrations",
+    "README.md"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.mts",
+      "import": "./index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "nitro build",
+    "dev": "node --env-file-if-exists=../.env ../node_modules/nitro/dist/cli/index.mjs dev --port 3001",
+    "start": "node .output/server/index.mjs",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --deny-warnings .",
+    "lint:fix": "oxlint --fix --deny-warnings .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint && npm run format:check",
+    "migrate": "node migrate.mjs",
+    "test": "node --import tsx --test test/*.test.mjs test/*.test.ts"
+  },
+  "dependencies": {
+    "h3": "^2.0.8",
+    "pg": "^8.23.1",
+    "unstorage": "2.0.0-beta.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "nitro": "3.0.261103-rc",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=26.13.1"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "studyId": "service-request",
+  "protocolVersion": "pilot-v1",
+  "title": "Service request form comparison",
+  "fields": [
+    {
+      "id": "fullName",
+      "label": "Full name"
+    },
+    {
+      "id": "phone",
+      "label": "Phone"
+    },
+    {
+      "id": "email",
+      "label": "Email"
+    },
+    {
+      "id": "street",
+      "label": "Street"
+    },
+    {
+      "id": "houseNumber",
+      "label": "House number"
+    },
+    {
+      "id": "zipCode",
+      "label": "Postal code"
+    },
+    {
+      "id": "city",
+      "label": "City"
+    },
+    {
+      "id": "objectType",
+      "label": "Object type"
+    },
+    {
+      "id": "issueCategory",
+      "label": "Issue category"
+    },
+    {
+      "id": "priority",
+      "label": "Priority"
+    },
+    {
+      "id": "preferredDate",
+      "label": "Preferred date"
+    },
+    {
+      "id": "timeWindow",
+      "label": "Time window"
+    }
+  ],
+  "forms": [
+    "service-request"
+  ],
+  "variants": [
+    {
+      "id": "A",
+      "label": "Conventional form"
+    },
+    {
+      "id": "B",
+      "label": "Experimental form"
+    }
+  ],
+  "phases": [
+    {
+      "id": "familiarization",
+      "includeInAnalysis": false
+    },
+    {
+      "id": "measured",
+      "includeInAnalysis": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "AX_BY",
+      "variantOrder": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "AY_BX",
+      "variantOrder": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BX_AY",
+      "variantOrder": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "id": "BY_AX",
+      "variantOrder": [
+        "B",
+        "A"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "B-A",
+      "baseline": "A",
+      "candidate": "B"
+    }
+  ],
+  "scenarioFieldsRequired": true,
+  "reportAdapter": "service-request",
+  "procedure": {
+    "trialsPerVariant": 3,
+    "familiarizationPerVariant": 1,
+    "measuredPerVariant": 2,
+    "betweenBlockPauseSeconds": 30,
+    "estimatedSessionMinutes": 15
+  }
+}

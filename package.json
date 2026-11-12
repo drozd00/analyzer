@@ -1,0 +1,26 @@
+{
+  "name": "input-analysis-workspace",
+  "private": true,
+  "workspaces": [
+    "datastore",
+    "packages/input-tracker"
+  ],
+  "scripts": {
+    "build": "npm run build:tracker && npm run build:datastore",
+    "build:datastore": "npm run build --workspace @input-analyzer/datastore",
+    "build:tracker": "npm run build --workspace input-tracker",
+    "setup:python": "uv sync --project packages/input-analyzer --frozen --all-extras --dev",
+    "build:python": "uv build --directory packages/input-analyzer",
+    "check:python": "uv lock --project packages/input-analyzer --check && uv run --directory packages/input-analyzer --frozen --all-extras ruff check . && uv run --directory packages/input-analyzer --frozen --all-extras ruff format --check . && uv run --directory packages/input-analyzer --frozen --all-extras ty check && npm run test:python",
+    "test:python": "uv run --directory packages/input-analyzer --frozen --all-extras pytest",
+    "check:python-package": "npm run build:python && uv run --directory packages/input-analyzer --frozen python scripts/check_distribution.py",
+    "dev:datastore": "npm run dev --workspace @input-analyzer/datastore",
+    "test": "npm run test:datastore && npm run test --workspace input-tracker",
+    "test:datastore": "npm run test --workspace @input-analyzer/datastore",
+    "format:datastore": "npm run format --workspace @input-analyzer/datastore",
+    "lint:datastore": "npm run lint --workspace @input-analyzer/datastore",
+    "check:datastore": "npm run check --workspace @input-analyzer/datastore",
+    "typecheck": "npm run typecheck --workspace @input-analyzer/datastore && npm run typecheck --workspace input-tracker",
+    "db:migrate": "node --env-file-if-exists=.env datastore/migrate.mjs"
+  }
+}

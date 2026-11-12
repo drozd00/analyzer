@@ -1,0 +1,13 @@
+{
+  "printWidth": 100,
+  "trailingComma": "none",
+  "ignorePatterns": ["dist/**"],
+  "overrides": [
+    {
+      "files": ["README.md"],
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
+}

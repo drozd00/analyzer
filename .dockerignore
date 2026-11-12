@@ -1,0 +1,12 @@
+.git
+**/node_modules
+**/.nitro
+**/.output
+**/dist
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.egg-info
+artifacts
+.env

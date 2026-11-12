@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InputTracker · independent catalog example</title>
+  <style>
+    body {
+      max-width: 42rem;
+      margin: 3rem auto;
+      padding: 1rem;
+      font: 1rem/1.6 system-ui;
+      color: #172033;
+    }
+    label {
+      display: block;
+      margin: 1rem 0;
+    }
+    input,
+    select,
+    button {
+      padding: 0.6rem;
+      font: inherit;
+    }
+    input,
+    select {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    :focus-visible {
+      outline: 3px solid #2765bf;
+      outline-offset: 3px;
+    }
+  </style>
+  <h1>Catalog search</h1>
+  <p>
+    This example records interactions with a catalog search form and exports them as JSON. Use
+    fictitious data.
+  </p>
+  <form id="catalog-search" data-track-form-id="catalog-search">
+    <label>Query <input name="query" autocomplete="off" required /></label>
+    <label for="category">Category</label>
+    <select id="category" name="category" required>
+      <option value="">Choose a category</option>
+      <option value="books">Books</option>
+      <option value="music">Music</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <p id="status" role="status">The event log contains metadata, not your query.</p>
+  <button id="export" type="button">Download event snapshot</button>
+  <script type="module">
+    import { createInputTracker } from "../dist/index.js";
+
+    const form = document.getElementById("catalog-search");
+    const status = document.getElementById("status");
+    const tracker = createInputTracker({ trackPointerTrajectory: false });
+    tracker.registerForm({
+      formId: "catalog-search",
+      fields: [
+        { fieldId: "query", order: 1, fieldKind: "search" },
+        { fieldId: "category", order: 2, fieldKind: "select" }
+      ]
+    });
+    tracker.emitAppEvent({ formId: "catalog-search", type: "trial.started", payload: {} });
+    tracker.start();
+
+    form.addEventListener("submit", function completeSearch(event) {
+      event.preventDefault();
+
+      const attemptId = crypto.randomUUID();
+      const attempted = tracker.emitAppEvent({
+        formId: "catalog-search",
+        type: "submit.attempted",
+        payload: { attemptId }
+      });
+
+      tracker.stop();
+      tracker.emitAppEvent({
+        formId: "catalog-search",
+        type: "trial.completed",
+        payload: { attemptId, submitTs: attempted.ts }
+      });
+
+      for (const control of form.elements) {
+        control.disabled = true;
+      }
+
+      status.textContent =
+        "Search finished. Download the snapshot for an explicit analyzer adapter.";
+    });
+
+    document.getElementById("export").addEventListener("click", function downloadSnapshot() {
+      const snapshot = tracker.exportData();
+      const json = JSON.stringify(snapshot, null, 2);
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "catalog-tracker.json";
+      link.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</html>

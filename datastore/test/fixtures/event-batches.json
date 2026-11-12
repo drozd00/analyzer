@@ -1,0 +1,462 @@
+[
+  {
+    "name": "valid-lifecycle-and-focus",
+    "valid": true,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {},
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  },
+  {
+    "name": "unknown-envelope-field",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {},
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ],
+      "secret": "must reject"
+    }
+  },
+  {
+    "name": "raw-input-value",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {
+            "value": "must reject"
+          },
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  },
+  {
+    "name": "content-key-leak",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {
+            "keyCategory": "content-like",
+            "key": "a"
+          },
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  },
+  {
+    "name": "negative-timestamp",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": -1,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {},
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  },
+  {
+    "name": "unknown-version",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 2,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {},
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "attemptId": "attempt-1",
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing-attempt-id",
+    "valid": false,
+    "batch": {
+      "schemaVersion": 1,
+      "batchId": "d6226e6f-57c1-59cb-a3f4-c73f4b926eb1",
+      "trialId": "28655a7f-2d2a-5eb4-9f99-e4b58b3e3b2b",
+      "events": [
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:1",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 1,
+          "ts": 0,
+          "source": "app",
+          "type": "trial.started",
+          "payload": {},
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:2",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 2,
+          "ts": 5.0,
+          "source": "browser",
+          "type": "focusin",
+          "payload": {},
+          "formId": "service-request",
+          "fieldId": "fullName"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:3",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 3,
+          "ts": 50,
+          "source": "app",
+          "type": "submit.attempted",
+          "payload": {
+            "attemptId": "attempt-1"
+          },
+          "formId": "service-request"
+        },
+        {
+          "schemaVersion": 1,
+          "eventId": "synthetic-p1-familiarization:4",
+          "sessionId": "e366cf1c-9889-57fe-9027-c36c8de4df22",
+          "pageId": "synthetic-p1-familiarization",
+          "sequence": 4,
+          "ts": 550,
+          "source": "app",
+          "type": "trial.completed",
+          "payload": {
+            "submitTs": 50
+          },
+          "formId": "service-request"
+        }
+      ]
+    }
+  }
+]

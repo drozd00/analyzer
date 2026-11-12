@@ -1,0 +1,29 @@
+{
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "node"],
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "import/no-duplicates": "error",
+    "no-console": "warn",
+    "typescript/consistent-type-imports": "error",
+    "unicorn/no-array-sort": "off"
+  },
+  "ignorePatterns": ["dist/**"],
+  "overrides": [
+    {
+      "files": ["test/**/*.mjs", "*.config.ts"],
+      "env": {
+        "browser": false,
+        "node": true
+      }
+    }
+  ]
+}

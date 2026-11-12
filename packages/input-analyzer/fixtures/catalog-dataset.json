@@ -1,0 +1,1786 @@
+{
+  "schemaVersion": 1,
+  "kind": "synthetic",
+  "profile": {
+    "schemaVersion": 1,
+    "studyId": "catalog-search",
+    "protocolVersion": "search-v1",
+    "title": "Library catalogue search",
+    "fields": [
+      {
+        "id": "query",
+        "label": "Search query"
+      },
+      {
+        "id": "category",
+        "label": "Catalogue category"
+      }
+    ],
+    "forms": [
+      "catalog-search"
+    ],
+    "variants": [
+      {
+        "id": "classic",
+        "label": "Classic catalogue"
+      },
+      {
+        "id": "compact",
+        "label": "Compact search"
+      },
+      {
+        "id": "assisted",
+        "label": "Assisted search"
+      }
+    ],
+    "phases": [
+      {
+        "id": "practice",
+        "includeInAnalysis": false
+      },
+      {
+        "id": "evaluation",
+        "includeInAnalysis": true
+      }
+    ],
+    "groups": [
+      {
+        "id": "forward",
+        "variantOrder": [
+          "classic",
+          "compact",
+          "assisted"
+        ]
+      },
+      {
+        "id": "reverse",
+        "variantOrder": [
+          "assisted",
+          "compact",
+          "classic"
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "id": "compact-classic",
+        "baseline": "classic",
+        "candidate": "compact"
+      },
+      {
+        "id": "assisted-classic",
+        "baseline": "classic",
+        "candidate": "assisted"
+      }
+    ],
+    "scenarioFieldsRequired": true,
+    "reportAdapter": null,
+    "procedure": {}
+  },
+  "provenance": {
+    "source": "deterministic-catalogue-fixture",
+    "not_participant_data": true
+  },
+  "sessions": [
+    {
+      "id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "study_id": "catalog-search",
+      "participant_code": "CATALOGUE-TEST-1",
+      "dataset_kind": "preflight",
+      "protocol_version": "search-v1",
+      "group_code": "forward"
+    },
+    {
+      "id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "study_id": "catalog-search",
+      "participant_code": "CATALOGUE-TEST-2",
+      "dataset_kind": "preflight",
+      "protocol_version": "search-v1",
+      "group_code": "reverse"
+    }
+  ],
+  "trials": [
+    {
+      "id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 0,
+      "variant": "classic",
+      "phase": "practice",
+      "repetition": 0,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-0",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 1,
+      "variant": "classic",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-1",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 2,
+      "variant": "classic",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-2",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 3,
+      "variant": "compact",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-3",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 4,
+      "variant": "compact",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-4",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 5,
+      "variant": "assisted",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-5",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "session_id": "09911205-7f53-5b14-b3c8-2e588bb1797f",
+      "ordinal": 6,
+      "variant": "assisted",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-0-6",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 0,
+      "variant": "classic",
+      "phase": "practice",
+      "repetition": 0,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-0",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 1,
+      "variant": "assisted",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-1",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 2,
+      "variant": "assisted",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-2",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 3,
+      "variant": "compact",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-3",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 4,
+      "variant": "compact",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-4",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 5,
+      "variant": "classic",
+      "phase": "evaluation",
+      "repetition": 1,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-5",
+      "status": "completed",
+      "final_sequence": 7
+    },
+    {
+      "id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "session_id": "b5d590d2-2d38-50a7-a6c3-0f47a8012234",
+      "ordinal": 6,
+      "variant": "classic",
+      "phase": "evaluation",
+      "repetition": 2,
+      "scenario_id": "catalogue-task",
+      "scenario": {
+        "label": "Find a publication",
+        "values": {
+          "query": "synthetic title",
+          "category": "synthetic category"
+        }
+      },
+      "page_id": "catalogue-page-1-6",
+      "status": "completed",
+      "final_sequence": 7
+    }
+  ],
+  "events": [
+    {
+      "event_id": "catalogue-page-0-0:1",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-0:2",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-0:3",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-0:4",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-0:5",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-0:6",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 6,
+      "ts_ms": 50,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-0:7",
+      "trial_id": "3ab5fb37-85a9-5c21-bd9a-036400b194cf",
+      "batch_id": "9b658040-7e67-5292-8dc7-4235073c31a6",
+      "page_id": "catalogue-page-0-0",
+      "sequence": 7,
+      "ts_ms": 550,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 50
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-1:1",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-1:2",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-1:3",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-1:4",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-1:5",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-1:6",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 6,
+      "ts_ms": 1000,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-1:7",
+      "trial_id": "b0d442f2-1f15-53ca-ab16-0bc4e9bbb72a",
+      "batch_id": "d7a291e0-004c-5f44-8452-a26dbed29262",
+      "page_id": "catalogue-page-0-1",
+      "sequence": 7,
+      "ts_ms": 1500,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1000
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-2:1",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-2:2",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-2:3",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-2:4",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-2:5",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-2:6",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 6,
+      "ts_ms": 1400,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-2:7",
+      "trial_id": "4e67a373-d47c-52a7-80bb-b2fb637f32de",
+      "batch_id": "f438aff1-1aa4-5a24-97c5-aa05f2030132",
+      "page_id": "catalogue-page-0-2",
+      "sequence": 7,
+      "ts_ms": 1900,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1400
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-3:1",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-3:2",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-3:3",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-3:4",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-3:5",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-3:6",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 6,
+      "ts_ms": 800,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-3:7",
+      "trial_id": "5279ac7b-bb8e-5cfa-bc0f-d8574831c14b",
+      "batch_id": "b5bdec22-62cd-5d80-925c-f7d84327784f",
+      "page_id": "catalogue-page-0-3",
+      "sequence": 7,
+      "ts_ms": 1300,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 800
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-4:1",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-4:2",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-4:3",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-4:4",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-4:5",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-4:6",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 6,
+      "ts_ms": 1000,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-4:7",
+      "trial_id": "bba0f5af-de1e-59bc-b365-c6f5f6d2a98d",
+      "batch_id": "9be5cfce-314e-526d-9123-f1c953550908",
+      "page_id": "catalogue-page-0-4",
+      "sequence": 7,
+      "ts_ms": 1500,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1000
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-5:1",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-5:2",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-5:3",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-5:4",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-5:5",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-5:6",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 6,
+      "ts_ms": 600,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-5:7",
+      "trial_id": "ce630ea1-5717-5aa1-8033-6796b4b84652",
+      "batch_id": "7c686f2e-1182-53ff-8a05-215f0e85d43f",
+      "page_id": "catalogue-page-0-5",
+      "sequence": 7,
+      "ts_ms": 1100,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 600
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-6:1",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-6:2",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-6:3",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-6:4",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-0-6:5",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-6:6",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 6,
+      "ts_ms": 800,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-0-6:7",
+      "trial_id": "a9a8d9f5-e341-5e38-b78c-b7860d65eeaf",
+      "batch_id": "38f29fd4-1b8c-583e-a168-f318f8c408a2",
+      "page_id": "catalogue-page-0-6",
+      "sequence": 7,
+      "ts_ms": 1300,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 800
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-0:1",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-0:2",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-0:3",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-0:4",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-0:5",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-0:6",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 6,
+      "ts_ms": 50,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-0:7",
+      "trial_id": "9c0a1eda-5803-5caa-86a7-576fd6d088bb",
+      "batch_id": "cff91f6a-1f1d-5d00-8245-120f4281ee19",
+      "page_id": "catalogue-page-1-0",
+      "sequence": 7,
+      "ts_ms": 550,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 50
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-1:1",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-1:2",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-1:3",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-1:4",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-1:5",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-1:6",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 6,
+      "ts_ms": 1900,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-1:7",
+      "trial_id": "2a7e7c55-5473-51d0-8de6-871f9df53fd1",
+      "batch_id": "f22ba0ec-ab72-5a31-a342-42b55094e003",
+      "page_id": "catalogue-page-1-1",
+      "sequence": 7,
+      "ts_ms": 2400,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1900
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-2:1",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-2:2",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-2:3",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-2:4",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-2:5",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-2:6",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 6,
+      "ts_ms": 1700,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-2:7",
+      "trial_id": "f8e47261-9685-5a99-bf46-277d463ec2cb",
+      "batch_id": "c255431f-7093-547d-9787-50b131b27042",
+      "page_id": "catalogue-page-1-2",
+      "sequence": 7,
+      "ts_ms": 2200,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1700
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-3:1",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-3:2",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-3:3",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-3:4",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-3:5",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-3:6",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 6,
+      "ts_ms": 1800,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-3:7",
+      "trial_id": "1e77b292-94a2-5f0b-9d1b-30602b9e022b",
+      "batch_id": "2e7f447b-03e5-5069-b168-f3609e0c3e2e",
+      "page_id": "catalogue-page-1-3",
+      "sequence": 7,
+      "ts_ms": 2300,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 1800
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-4:1",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-4:2",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-4:3",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-4:4",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-4:5",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-4:6",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 6,
+      "ts_ms": 2000,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-4:7",
+      "trial_id": "e775ddf4-2e08-56b7-a178-00deee0535cf",
+      "batch_id": "1a40a218-47f4-51c2-9136-221fe36fc564",
+      "page_id": "catalogue-page-1-4",
+      "sequence": 7,
+      "ts_ms": 2500,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 2000
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-5:1",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-5:2",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-5:3",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-5:4",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-5:5",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-5:6",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 6,
+      "ts_ms": 2000,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-5:7",
+      "trial_id": "1ad33f27-3291-5984-a636-3181eb88edda",
+      "batch_id": "813e3c53-62b8-59be-adc6-7a618e439b75",
+      "page_id": "catalogue-page-1-5",
+      "sequence": 7,
+      "ts_ms": 2500,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 2000
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-6:1",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 1,
+      "ts_ms": 0,
+      "source": "app",
+      "type": "trial.started",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-6:2",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 2,
+      "ts_ms": 10,
+      "source": "browser",
+      "type": "focusin",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-6:3",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 3,
+      "ts_ms": 20,
+      "source": "browser",
+      "type": "input",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {
+        "inputType": "insertText",
+        "valueLength": 15
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-6:4",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 4,
+      "ts_ms": 30,
+      "source": "browser",
+      "type": "focusout",
+      "form_id": "catalog-search",
+      "field_id": "query",
+      "payload": {}
+    },
+    {
+      "event_id": "catalogue-page-1-6:5",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 5,
+      "ts_ms": 40,
+      "source": "browser",
+      "type": "change",
+      "form_id": "catalog-search",
+      "field_id": "category",
+      "payload": {
+        "selectedCount": 1
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-6:6",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 6,
+      "ts_ms": 2200,
+      "source": "app",
+      "type": "submit.attempted",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1"
+      }
+    },
+    {
+      "event_id": "catalogue-page-1-6:7",
+      "trial_id": "7031ffba-3da3-5391-8ae0-27cfb219f25a",
+      "batch_id": "0be8238b-c087-5d0b-ab32-cc5d3e26d8cb",
+      "page_id": "catalogue-page-1-6",
+      "sequence": 7,
+      "ts_ms": 2700,
+      "source": "app",
+      "type": "trial.completed",
+      "form_id": "catalog-search",
+      "field_id": null,
+      "payload": {
+        "attemptId": "submit-1",
+        "submitTs": 2200
+      }
+    }
+  ]
+}
